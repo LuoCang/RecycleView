@@ -11,7 +11,8 @@ compile 'com.android.support:design:24.0.0'
 ```
 # Using libstreaming in your app
 ## use RecyclerView in xml
-```xml
+```java
+
  <android.support.v7.widget.RecyclerView
         android:id="@+id/recyceView"
         android:layout_width="match_parent"
@@ -20,5 +21,5 @@ compile 'com.android.support:design:24.0.0'
 ----------
 ## Liscense
 ```Java
-Guanluocang
+Guanluocang Hope EveryBody give me more Star!  Thanks!
 ```
