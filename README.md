@@ -14,7 +14,6 @@ compile 'com.android.support:design:24.0.0'
         android:id="@+id/recyceView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-```      
-## Liscense
-
+```    
+# Liscense
 Guanluocang
