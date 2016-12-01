@@ -4,7 +4,7 @@ RecycleViewUseDemo
 
 Today I use RecycleView, i can't use it very well,so I learn ZhangHongYang's blog and use it in my Repository. 
 Now , i write a demo to remember it and Extension it to my friend
-
+----------
 ## Add the dependency
 ```xml 
 compile 'com.android.support:design:24.0.0'
@@ -17,7 +17,8 @@ compile 'com.android.support:design:24.0.0'
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 ```    
-# Liscense
+----------
+## Liscense
 ```Java
 Guanluocang
 ```
