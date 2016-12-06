@@ -3,7 +3,6 @@ package com.dqhl.recycledemo.activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
@@ -17,7 +16,7 @@ import java.util.List;
 
 public class HorizontalRecycleActivity extends AppCompatActivity {
 
-    private RecyclerView mRecyclerView;
+//    private RecyclerView mRecyclerView;
     private GalleryAdapter mGalleryAdapter;
     private List<Integer> mImageMoudleList;
     private int [] images = {R.drawable.divider_bg};
@@ -27,20 +26,22 @@ public class HorizontalRecycleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_horizontal_recycle);
-        initData();
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyceView);
+//        initData();
+//        mRecyclerView = (RecyclerView) findViewById(R.id.recyceView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-        mRecyclerView.setLayoutManager(linearLayoutManager);
+//        mRecyclerView.setLayoutManager(linearLayoutManager);
         mGalleryAdapter = new GalleryAdapter(HorizontalRecycleActivity.this,mImageMoudleList);
-        mRecyclerView.setAdapter(mGalleryAdapter);
         mGalleryAdapter.setOnItemClickListener(new GalleryAdapter.onItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
+
                 Toast.makeText(HorizontalRecycleActivity.this, position+"", Toast.LENGTH_SHORT)
                         .show();
             }
         });
+//        mRecyclerView.setAdapter(mGalleryAdapter);
+
     }
 
     private void initData() {

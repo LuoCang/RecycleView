@@ -75,8 +75,10 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
                 @Override
                 public void onClick(View view) {
                     onItemClickListener.onItemClick(holder.itemView,position);
+                    holder.iv_img.setBackgroundResource(R.color.colorAccent);
                 }
             });
+            notifyDataSetChanged();
         }
     }
 }
